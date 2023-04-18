@@ -18,3 +18,9 @@ variable "subnet_id" {
   type    = string
   default = ""
 }
+
+variable "vpcid" {
+  type = "string"
+  default = ""
+  
+}
