@@ -20,7 +20,7 @@ variable "subnet_id" {
 }
 
 variable "vpcid" {
-  type = "string"
+  type = string
   default = ""
   
 }
