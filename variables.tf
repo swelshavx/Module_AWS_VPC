@@ -3,7 +3,7 @@ variable "region" {
   default = "us-west-2"
 }
 
-}
+
 variable "subnet_id" {
   type    = string
   default = ""
