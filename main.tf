@@ -16,7 +16,7 @@ resource "aws_internet_gateway" "spokeigw" {
 }
 resource "aws_subnet" "spokesubnet" {
   vpc_id     = aws_vpc.spokevpc.id
-  cidr_block = ""
+  cidr_block = var.subnet
    
  
   tags = {
