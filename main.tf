@@ -1,5 +1,5 @@
 resource "aws_vpc" "spokevpc" {
-  cidr_block = ""
+  cidr_block = var.cidr
   
   tags = {
     Name = ""
