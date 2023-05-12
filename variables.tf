@@ -20,5 +20,5 @@ variable "subnet" {
 }
 variable "cidr_block" {
   type = string
-  default = ""
+  default = "10.8.0.0/16"
 }
