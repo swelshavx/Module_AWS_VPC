@@ -26,7 +26,7 @@ resource "aws_subnet" "spokesubnet" {
 }
 
 resource "aws_route_table" "ModVPCRT" {
-  vpc_id = aws_vpc.spokevpc.vpc_id
+  vpc_id = aws_vpc.spokevpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
