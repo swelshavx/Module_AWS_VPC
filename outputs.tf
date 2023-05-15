@@ -4,3 +4,6 @@ output "vpc_cidr"{
 output "vpc_id" {
   value = var.vpcid
 }
+output "igw_id" {
+    value = var.igw
+}
