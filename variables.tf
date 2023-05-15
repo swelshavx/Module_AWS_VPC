@@ -22,3 +22,7 @@ variable "cidr" {
   type = string
   default = ""
 }
+variable "igw" {
+  type = string
+  default = ""
+}
