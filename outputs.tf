@@ -5,5 +5,5 @@ output "vpc_id" {
   value = var.vpcid
 }
 output "igw_id" {
-    value = aws_internet_gateway.gw.id
+    value = aws_internet_gateway.id
 }
