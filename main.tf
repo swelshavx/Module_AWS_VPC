@@ -30,7 +30,7 @@ resource "aws_route_table" "ModVPCRT" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id =var.spokegwigw
+    gateway_id =var.spokeigw.igw_id
   }
   depends_on = [aws_vpc.spokevpc]
 }
