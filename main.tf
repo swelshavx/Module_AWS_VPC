@@ -26,12 +26,12 @@ resource "aws_subnet" "spokesubnet" {
 }
 
 resource "aws_route_table" "ModVPCRT" {
-  vpc_id = module.Module_AWS_VPC.vpc_id
+  vpc_id = aws_vpc.spokevpc.vpc_id
 
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id = module.Module_AWS_VPC.igw_id
+    gateway_id =var.spokegwigw
   }
-  depends_on = [ module.Module_AWS_VPC ]
+  depends_on = [aws_vpc.spokevpc]
 }
 
